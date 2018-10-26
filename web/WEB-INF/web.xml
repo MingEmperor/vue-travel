@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:name="http://java.sun.com/xml/ns/j2ee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.0">
+    <servlet>
+        <description></description>
+
+        <display-name>TestInitServlet</display-name>
+        <servlet-name>YourDaddy</servlet-name>
+        <servlet-class>Servlet1</servlet-class>
+        <init-param>
+            <param-name>YourDaddy</param-name>
+            <param-value>WEB-INF/config</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>YourDaddy</servlet-name>
+        <url-pattern>/qq</url-pattern>
+    </servlet-mapping>
+</web-app>
